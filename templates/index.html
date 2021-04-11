@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>會員登入系統</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head">
+            <h2>會員登入系統</h2>
+        </div>
+        <div class="content">
+            <div class="sign">
+                <h3>註冊系統</h3>
+                <form action="/signup" method="POST">
+                    <p><label for="na">姓名</label><input type="text" name="na" id="na" placeholder="請輸入姓名"></p>
+                    <p><label for="ac">帳號</label><input type="text" name="ac" id="ac" placeholder="請輸入帳號"></p>
+                    <p><label for="ps">密碼</label><input type="password" name="ps" id="ps" placeholder="請輸入密碼"></p>
+                    <input type="submit" value="註冊" class="submit">               
+                </form>
+            </div>
+            <div class="sign">
+                <h3>登入系統</h3>
+                <form action="/signin" method="POST">
+                    <p><label for="ac">帳號</label><input type="text" name="ac" id="ac" placeholder="請輸入帳號"></p>
+                    <p><label for="ps">密碼</label><input type="password" name="ps" id="ps" placeholder="請輸入密碼"></p>
+                    <input type="submit" value="登入" class="submit">               
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
